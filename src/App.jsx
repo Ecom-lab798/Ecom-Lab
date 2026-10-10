@@ -14,7 +14,6 @@ import Practice from "./components/Practice.jsx";
 import Author from "./components/Author.jsx";
 import Testimonials from "./components/Testimonials.jsx";
 import Packages from "./components/Packages.jsx";
-import PackageQuiz from "./components/PackageQuiz.jsx";
 import FAQ from "./components/FAQ.jsx";
 import HowToEnroll from "./components/HowToEnroll.jsx";
 import FinalCTA from "./components/FinalCTA.jsx";
@@ -57,7 +56,6 @@ export default function App() {
         <Testimonials />
         <HowToEnroll />
         <Packages />
-        <PackageQuiz />
         <FAQ />
         <FinalCTA />
       </main>

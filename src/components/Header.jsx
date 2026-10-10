@@ -7,7 +7,7 @@ const links = [
   { href: "#program", label: "Программа" },
   { href: "#practice", label: "Практика" },
   { href: "#how-to-enroll", label: "Как записаться" },
-  { href: "#packages", label: "Пакеты" },
+  { href: "#packages", label: "Тарифы" },
   { href: "#reviews", label: "Отзывы" },
 ];
 
@@ -62,7 +62,7 @@ export default function Header() {
           onClick={() => selectPackage(null, true)}
           className="hidden lg:inline-flex items-center rounded-full bg-signal px-5 py-2.5 text-sm font-semibold text-paper hover:bg-signal-dim transition-colors"
         >
-          Выбрать тариф
+          Записаться
         </button>
 
         <button
@@ -92,7 +92,7 @@ export default function Header() {
             }}
             className="mt-1 rounded-full bg-signal px-5 py-3 text-sm font-semibold text-paper text-center"
           >
-            Выбрать тариф
+            Записаться
           </button>
         </div>
       )}

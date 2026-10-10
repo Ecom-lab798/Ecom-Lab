@@ -97,7 +97,7 @@ export default function ApplicationForm() {
                 <CheckCircle2 size={38} className="text-signal" />
                 <p className="mt-4 text-sm text-paper-dim max-w-xs">
                   Спасибо! Мы свяжемся с тобой в ближайшее время, чтобы подтвердить{" "}
-                  {customRequest ? customRequest.name.toLowerCase() : `пакет ${selected?.name || ""}`} и
+                  {customRequest ? customRequest.name.toLowerCase() : `тариф «${selected?.name || ""}»`} и
                   рассказать о следующих шагах.
                 </p>
                 <button
@@ -117,14 +117,14 @@ export default function ApplicationForm() {
                 ) : (
                   <>
                     <div>
-                      <label className="text-xs text-paper-faint">Выбранный пакет</label>
+                      <label className="text-xs text-paper-faint">Выбранный тариф</label>
                       <select
                         value={selectedId || ""}
                         onChange={(e) => selectPackage(e.target.value, false)}
                         className="mt-1.5 w-full rounded-lg bg-ink-700 border border-ink-600 px-3.5 py-2.5 text-sm focus:border-signal outline-none"
                       >
                         <option value="" disabled>
-                          Выбери пакет
+                          Выбери тариф
                         </option>
                         {packages.map((p) => (
                           <option key={p.id} value={p.id}>
